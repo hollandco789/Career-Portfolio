@@ -17,9 +17,8 @@ body {
 .header {
     background-color: var(--blue);
     color: var(--grey);
-    border: 20px;
-    border-color: black;
     padding: 10px;
+    margin-bottom: 50px;
 }
 
 h1 {
@@ -30,20 +29,105 @@ h1 {
 }
 
 .nav {
-    display:flex;
+    display: flex;
     flex-direction: row;
+    padding-right: 15px;
+    padding-top: 22px;
     float: right;
-    padding: 13px;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 0px;
     font-size: large;
     font-family: sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,;
     font-weight:bold;
+    text-decoration: none;
+    background-color: var(--blue);
+    color: var(--grey);
 }
 
-.nav li {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.nav li:hover {
+.nav a:hover {
     color: var(--white);
 }
+
+h2 {
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    font-weight: bold;
+    background-color: var(--blue);
+    color: var(--white);
+    width: 25%;
+    margin-left: 45px;
+    display: flex;
+    flex: 1 0 25%;
+}
+
+p {
+    font-size: 25px;
+    font-family: sans-serif, 'Lucida Sans';
+    width: 60%;
+    float: right;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 85px;
+    padding-right: 85px;
+    background-color: var(--white);
+    margin-right: 35px;
+    margin-top: 150px;
+    border-radius: 15px;
+    display: flex;
+    flex: 1 0 70%;
+}
+
+img {
+    display: inline-block;
+    width: 25%;
+    margin-bottom: 20px;
+    margin-left: 45px;
+}
+
+.contact ul {
+    font-size: 25px;
+    font-family: sans-serif, 'Lucida Sans';
+    width: 69%;
+    background-color: var(--white);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    float:right;
+    margin-top: 40px;
+    margin-right: 35px;
+}
+
+.contact li {
+    margin: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    header {
+      background: #772014;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav {
+      background-color: #bb8588;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
+    }
+  }
+
+/*add placeholder pics for deployed apps with hover animations
+add screen adjust*/
